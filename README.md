@@ -50,7 +50,7 @@ UIImage *newImage = [UIImage addQRCodeBgImage:bgImage bgImageSize:200 QRImage:qr
 
 //---------------------------------------------------华丽的分割线----------------------------------------------//<br>
 
-快速创建二维码，条形码扫描页面<br>
+快速创建二维码，条形码扫描页面（需要真机调试！）<br>
 quickly create scan view <br>
 ![](https://github.com/zhang28602/ZZYQRCode_BarCode/raw/master/Screenshots/scan.png)
 <br>
