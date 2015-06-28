@@ -25,7 +25,6 @@
     // 自定义背景图片
     UIImage *bgImage = [UIImage imageNamed:@"flower"];
     self.lastImage.image = [UIImage addQRCodeBgImage:bgImage bgImageSize:200 QRImage:qrImage];
-    
-    
+    // 测试
 }
 @end
