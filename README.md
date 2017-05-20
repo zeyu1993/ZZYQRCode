@@ -62,3 +62,15 @@ UIImage *image = [UIImage createQRCodeWithSize:200
                                  iconImageSize:40];
 ```
 
+## 注意事项
+由于iOS10权限设置变换，需要在项目中的info.plist文件中添加如下文件
+
+```
+<key>NSCameraUsageDescription</key>
+<string></string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string></string>
+```
+
+# 页面效果
+![](https://github.com/zhang28602/ZZYQRCode_BarCode/raw/master/Screenshots/show.gif)
