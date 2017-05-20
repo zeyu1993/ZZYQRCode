@@ -52,12 +52,12 @@
 		BF0F76CB1B06544500C8F372 /* ZZYScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYScan.m; sourceTree = "<group>"; };
 		BF0F76D01B0655C400C8F372 /* UIImage+ZZYQRImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZZYQRImageExtension.h"; sourceTree = "<group>"; };
 		BF0F76D11B0655C400C8F372 /* UIImage+ZZYQRImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZZYQRImageExtension.m"; sourceTree = "<group>"; };
-		F876F97E1ECF29D9007894F6 /* AVCaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureSessionManager.h; sourceTree = "<group>"; };
-		F876F97F1ECF29D9007894F6 /* AVCaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureSessionManager.m; sourceTree = "<group>"; };
+		F876F97E1ECF29D9007894F6 /* AVCaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVCaptureSessionManager.h; path = ../AVCaptureSessionManager.h; sourceTree = "<group>"; };
+		F876F97F1ECF29D9007894F6 /* AVCaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVCaptureSessionManager.m; path = ../AVCaptureSessionManager.m; sourceTree = "<group>"; };
 		F876F9831ECF6AFB007894F6 /* CheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
 		F876F9841ECF6AFB007894F6 /* CheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
 		F88B50CF1ED0830E002D0552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F88B50EB1ED087D2002D0552 /* ZZYQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZYQRCode.bundle; sourceTree = "<group>"; };
+		F88B50EB1ED087D2002D0552 /* ZZYQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ZZYQRCode.bundle; path = Demo/ZZYQRCode.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +100,7 @@
 		BF0F769D1B0649B800C8F372 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F8F4D8D61ED0B495004C81CA /* ZZYQRCode */,
 				BF0F76CD1B0655A800C8F372 /* Category */,
 				BF0F76A21B0649B800C8F372 /* AppDelegate.h */,
 				BF0F76A31B0649B800C8F372 /* AppDelegate.m */,
@@ -109,13 +110,10 @@
 				BF0F76C81B06541A00C8F372 /* ZZYCreate.m */,
 				BF0F76CA1B06544500C8F372 /* ZZYScan.h */,
 				BF0F76CB1B06544500C8F372 /* ZZYScan.m */,
-				F876F97E1ECF29D9007894F6 /* AVCaptureSessionManager.h */,
-				F876F97F1ECF29D9007894F6 /* AVCaptureSessionManager.m */,
 				F876F9831ECF6AFB007894F6 /* CheckViewController.h */,
 				F876F9841ECF6AFB007894F6 /* CheckViewController.m */,
 				BF0F76A81B0649B800C8F372 /* Main.storyboard */,
 				BF0F76AD1B0649B800C8F372 /* LaunchScreen.xib */,
-				F88B50EB1ED087D2002D0552 /* ZZYQRCode.bundle */,
 				BF0F76AB1B0649B800C8F372 /* Images.xcassets */,
 				BF0F769E1B0649B800C8F372 /* Supporting Files */,
 			);
@@ -161,6 +159,16 @@
 			isa = PBXGroup;
 			children = (
 				F88B50CF1ED0830E002D0552 /* Info.plist */,
+			);
+			path = ZZYQRCode;
+			sourceTree = "<group>";
+		};
+		F8F4D8D61ED0B495004C81CA /* ZZYQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				F876F97E1ECF29D9007894F6 /* AVCaptureSessionManager.h */,
+				F876F97F1ECF29D9007894F6 /* AVCaptureSessionManager.m */,
+				F88B50EB1ED087D2002D0552 /* ZZYQRCode.bundle */,
 			);
 			path = ZZYQRCode;
 			sourceTree = "<group>";
