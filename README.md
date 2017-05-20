@@ -50,7 +50,6 @@
 ```objc
 UIImage *image = [UIImage createQRCodeWithSize:200 dataString:@"hello"];
 ```
-![](https://github.com/zhang28602/ZZYQRCode_BarCode/raw/master/Screenshots/imag1.png)
 
 6. 自定义二维码
 
@@ -62,4 +61,4 @@ UIImage *image = [UIImage createQRCodeWithSize:200
                                      iconImage:icon
                                  iconImageSize:40];
 ```
-![](https://github.com/zhang28602/ZZYQRCode_BarCode/raw/master/Screenshots/image3.png)
+

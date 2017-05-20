@@ -42,6 +42,7 @@
 // 在页面将要显示的时候添加定时器
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.session start];
     [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
 
