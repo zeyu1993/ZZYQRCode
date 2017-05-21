@@ -1,9 +1,9 @@
 # ZZYQRCode
 
-Using the system API (AVFoundation) for packaging, including the UI interface and QR code, barcode scanning, generating and other operations [中文说明](https://github.com/SeayXu)
+使用系统API（AVFoundation）进行封装，包含UI界面以及对二维码，条形码进行扫描，生成等操作
 
-## How to use
-1. Create sessionManager
+## 如何使用
+1. 创建sessionManager,同时需要设置扫描类型、扫描区域等
 
 ```objc
 - (instancetype)initWithAVCaptureQuality:(AVCaptureQuality)quality
@@ -12,13 +12,13 @@ Using the system API (AVFoundation) for packaging, including the UI interface an
                             successBlock:(SuccessBlock)success;
 ```
 
-2. Show view
+2. 显示View
 
 ```objc
 - (void)showPreviewLayerInView:(UIView *)view;
 ```
-## Others features
-1. Scan sound effects
+## 附加功能
+1. 扫描音效
 
 ```objc
 @property(assign, nonatomic) BOOL isPlaySound;
@@ -26,32 +26,32 @@ Using the system API (AVFoundation) for packaging, including the UI interface an
 @property(copy, nonatomic) NSString *soundName;
 ```
 
-2. Torch
+2. 开启闪光灯
 
 ```objc
 - (void)turnTorch:(BOOL)state;
 ```
 
-3. Scan the QR code in the album
+3. 扫描相册中的二维码
 
 ```objc
 - (void)scanPhotoWith:(UIImage *)image successBlock:(SuccessBlock)success;
 ```
 
-4. Check authorization status
+4. 权限监测
 
 ```objc
 + (void)checkAuthorizationStatusForCameraWithGrantBlock:(void(^)())grant
                                             DeniedBlock:(void(^)())denied;
 ```
 
-5. Create QR code
+5. 创建普通二维码
 
 ```objc
 UIImage *image = [UIImage createQRCodeWithSize:200 dataString:@"hello"];
 ```
 
-6. Create customize QR code
+6. 自定义二维码
 
 ```objc
 UIImage *icon = [UIImage imageNamed:@"bigMax"];
@@ -62,8 +62,8 @@ UIImage *image = [UIImage createQRCodeWithSize:200
                                  iconImageSize:40];
 ```
 
-## Pay attention
-Because of iOS10 authorization change,you need to add code in your info.plist
+## 注意事项
+由于iOS10权限设置变换，需要在项目中的info.plist文件中添加如下文件
 
 ```
 <key>NSCameraUsageDescription</key>
@@ -72,5 +72,5 @@ Because of iOS10 authorization change,you need to add code in your info.plist
 <string></string>
 ```
 
-# Page show
+# 页面效果
 ![](https://github.com/zhang28602/ZZYQRCode_BarCode/raw/master/Screenshots/show.gif)
