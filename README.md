@@ -1,6 +1,7 @@
 # ZZYQRCode
 
-Using the system API (AVFoundation) for packaging, including the UI interface and QR code, barcode scanning, generating and other operations [中文说明](https://github.com/SeayXu)
+Using the system API (AVFoundation) for packaging, including the UI interface and QR code, barcode scanning, generating and other operations 
+[中文说明](https://github.com/zhang28602/ZZYQRCode/blob/master/READMEZH.md)
 
 ## How to use
 1. Create sessionManager
