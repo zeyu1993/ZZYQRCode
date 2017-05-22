@@ -1,6 +1,13 @@
 # ZZYQRCode
 
 Using the system API (AVFoundation) for packaging, including the UI interface and QR code, barcode scanning, generating and other operations [中文说明](https://github.com/SeayXu)
+## HOW to install
+
+```
+platform :ios, '8.0'
+use_frameworks!
+pod 'ZZYQRCode', '~> 1.0.0'
+```
 
 ## How to use
 1. Create sessionManager

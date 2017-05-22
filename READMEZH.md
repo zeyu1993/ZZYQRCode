@@ -1,6 +1,13 @@
 # ZZYQRCode
 
 使用系统API（AVFoundation）进行封装，包含UI界面以及对二维码，条形码进行扫描，生成等操作
+## 如何安装
+
+```
+platform :ios, '8.0'
+use_frameworks!
+pod 'ZZYQRCode', '~> 1.0.0'
+```
 
 ## 如何使用
 1. 创建sessionManager,同时需要设置扫描类型、扫描区域等
