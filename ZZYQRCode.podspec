@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
 s.name = "ZZYQRCode"
-s.version = "1.0.0"
+s.version = "1.1.0"
 s.license = "MIT"
 s.summary = "A Scan QRCode Or BarCode Framework on iOS."
 s.homepage = "https://github.com/zhang28602/ZZYQRCode"
 s.authors = { "张泽宇" => "zeyu930213@gmail.com" }
-s.source = { :git => "https://github.com/zhang28602/ZZYQRCode.git", :tag => "1.0.0" }
+s.source = { :git => "https://github.com/zhang28602/ZZYQRCode.git", :tag => "1.1.0" }
 s.requires_arc = true
 s.ios.deployment_target = "8.0"
 s.source_files = "Demo/Demo/ZZYQRCode/*.{h,m}"

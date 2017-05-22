@@ -16,7 +16,7 @@
 		BF0F76C61B0650E600C8F372 /* ZZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F76C51B0650E600C8F372 /* ZZYTabBarController.m */; };
 		BF0F76C91B06541A00C8F372 /* ZZYCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F76C81B06541A00C8F372 /* ZZYCreate.m */; };
 		BF0F76CC1B06544500C8F372 /* ZZYScan.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F76CB1B06544500C8F372 /* ZZYScan.m */; };
-		BF0F76D31B0655C400C8F372 /* UIImage+ZZYQRImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F76D11B0655C400C8F372 /* UIImage+ZZYQRImageExtension.m */; };
+		F8335E3C1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F8335E3B1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.m */; };
 		F876F9851ECF6AFB007894F6 /* CheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F876F9841ECF6AFB007894F6 /* CheckViewController.m */; };
 		F8F4D8DB1ED0B578004C81CA /* AVCaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F4D8D91ED0B578004C81CA /* AVCaptureSessionManager.m */; };
 		F8F4D8DC1ED0B578004C81CA /* ZZYQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8F4D8DA1ED0B578004C81CA /* ZZYQRCode.bundle */; };
@@ -50,8 +50,9 @@
 		BF0F76C81B06541A00C8F372 /* ZZYCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYCreate.m; sourceTree = "<group>"; };
 		BF0F76CA1B06544500C8F372 /* ZZYScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYScan.h; sourceTree = "<group>"; };
 		BF0F76CB1B06544500C8F372 /* ZZYScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYScan.m; sourceTree = "<group>"; };
-		BF0F76D01B0655C400C8F372 /* UIImage+ZZYQRImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZZYQRImageExtension.h"; sourceTree = "<group>"; };
-		BF0F76D11B0655C400C8F372 /* UIImage+ZZYQRImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZZYQRImageExtension.m"; sourceTree = "<group>"; };
+		F8335E3A1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZZYQRImageExtension.h"; sourceTree = "<group>"; };
+		F8335E3B1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZZYQRImageExtension.m"; sourceTree = "<group>"; };
+		F8335E3D1ED2AFCD00DF2049 /* ZZYQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZYQRCode.h; sourceTree = "<group>"; };
 		F876F9831ECF6AFB007894F6 /* CheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
 		F876F9841ECF6AFB007894F6 /* CheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
 		F88B50CF1ED0830E002D0552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				F8F4D8D71ED0B578004C81CA /* ZZYQRCode */,
-				BF0F76CD1B0655A800C8F372 /* Category */,
 				BF0F76A21B0649B800C8F372 /* AppDelegate.h */,
 				BF0F76A31B0649B800C8F372 /* AppDelegate.m */,
 				BF0F76C41B0650E600C8F372 /* ZZYTabBarController.h */,
@@ -146,15 +146,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BF0F76CD1B0655A800C8F372 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				BF0F76D01B0655C400C8F372 /* UIImage+ZZYQRImageExtension.h */,
-				BF0F76D11B0655C400C8F372 /* UIImage+ZZYQRImageExtension.m */,
-			);
-			name = Category;
-			sourceTree = "<group>";
-		};
 		F88B50CE1ED0830E002D0552 /* ZZYQRCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +157,11 @@
 		F8F4D8D71ED0B578004C81CA /* ZZYQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				F8335E3D1ED2AFCD00DF2049 /* ZZYQRCode.h */,
 				F8F4D8D81ED0B578004C81CA /* AVCaptureSessionManager.h */,
 				F8F4D8D91ED0B578004C81CA /* AVCaptureSessionManager.m */,
+				F8335E3A1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.h */,
+				F8335E3B1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.m */,
 				F8F4D8DA1ED0B578004C81CA /* ZZYQRCode.bundle */,
 			);
 			path = ZZYQRCode;
@@ -279,10 +273,10 @@
 				F876F9851ECF6AFB007894F6 /* CheckViewController.m in Sources */,
 				BF0F76C61B0650E600C8F372 /* ZZYTabBarController.m in Sources */,
 				BF0F76A41B0649B800C8F372 /* AppDelegate.m in Sources */,
+				F8335E3C1ED2AFB000DF2049 /* UIImage+ZZYQRImageExtension.m in Sources */,
 				BF0F76A11B0649B800C8F372 /* main.m in Sources */,
 				BF0F76C91B06541A00C8F372 /* ZZYCreate.m in Sources */,
 				F8F4D8DB1ED0B578004C81CA /* AVCaptureSessionManager.m in Sources */,
-				BF0F76D31B0655C400C8F372 /* UIImage+ZZYQRImageExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
