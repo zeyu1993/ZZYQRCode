@@ -11,7 +11,7 @@ Using the system API (AVFoundation) for packaging, including the UI interface an
 ```
 platform :ios, '8.0'
 use_frameworks!
-pod 'ZZYQRCode', '~> 1.0.0'
+pod 'ZZYQRCode', '~> 1.1.0'
 ```
 
 ## How to use
